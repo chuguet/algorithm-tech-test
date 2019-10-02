@@ -10,9 +10,8 @@ public class Main {
         System.out.println(isPalindrome(text) ? "The text is palindrome" : "The text is not palindrome");
     }
 
-    public static boolean isPalindrome(String text) {
+    private static boolean isPalindrome(String text) {
         return new StringBuffer(text).reverse().toString().equals(text);
     }
-
 
 }

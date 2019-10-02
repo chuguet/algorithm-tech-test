@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         List<Integer> nums = Arrays.asList(1,1,2,3,4,2,4,2,1,3,7);
         Integer k = 5;
-        Set<Integer> hashSet = kMethodRecursive(nums, k, new HashSet<Integer>());
+        kMethodRecursive(nums, k, new HashSet<Integer>());
     }
 
     private static Set<Integer> kMethod (List<Integer> nums, Integer k) {
