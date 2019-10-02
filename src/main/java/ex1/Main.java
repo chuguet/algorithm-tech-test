@@ -11,7 +11,11 @@ public class Main {
     }
 
     private static boolean isPalindrome(String text) {
-        return new StringBuffer(text).reverse().toString().equals(text);
+        int textLength = text.length();
+        int halfTextLength = text.length() / 2;
+        String firstHalfText = text.substring(0, halfTextLength);
+        String secondHalfText = textLength % 2 == 0 ? text.substring(halfTextLength, textLength) : text.substring(halfTextLength + 1, textLength);
+        return firstHalfText.equals(new StringBuffer(secondHalfText).reverse().toString());
     }
 
 }
