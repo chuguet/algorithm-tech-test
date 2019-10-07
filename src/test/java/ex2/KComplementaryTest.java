@@ -15,7 +15,7 @@ public class KComplementaryTest {
         Integer k = 5;
         KComplementary kComplementary = KComplementary.getInstance();
         List<Tuple> result = kComplementary.kMethodRecursive(nums, k, new HashSet<Integer>(), new ArrayList<Tuple>());
-        Assert.assertEquals(Arrays.asList(new Tuple(3,2), new Tuple(4,1), new Tuple(2,3), new Tuple(4,1), new Tuple(2,3), new Tuple(1,4), new Tuple(3,2)), result);
+        Assert.assertEquals(Arrays.asList(new Tuple(3, 2), new Tuple(4, 1), new Tuple(2, 3), new Tuple(4, 1), new Tuple(2, 3), new Tuple(1, 4), new Tuple(3, 2)), result);
     }
 
     @org.junit.Test
@@ -24,7 +24,7 @@ public class KComplementaryTest {
         Integer k = 5;
         KComplementary kComplementary = KComplementary.getInstance();
         List<Tuple> result = kComplementary.kMethod(nums, k);
-        Assert.assertEquals(Arrays.asList(new Tuple(3,2), new Tuple(4,1), new Tuple(2,3), new Tuple(4,1), new Tuple(2,3), new Tuple(1,4), new Tuple(3,2)), result);
+        Assert.assertEquals(Arrays.asList(new Tuple(3, 2), new Tuple(4, 1), new Tuple(2, 3), new Tuple(4, 1), new Tuple(2, 3), new Tuple(1, 4), new Tuple(3, 2)), result);
     }
 
 }

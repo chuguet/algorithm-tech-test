@@ -20,7 +20,7 @@ public class KComplementary {
         return kComplementary;
     }
 
-    public static List<Tuple> kMethod(List<Integer> nums, Integer k) {
+    public List<Tuple> kMethod(List<Integer> nums, Integer k) {
         List<Tuple> result = new ArrayList<Tuple>();
         Set<Integer> hashSet = new HashSet<Integer>();
         for (Integer num : nums) {
@@ -32,7 +32,7 @@ public class KComplementary {
         return result;
     }
 
-    public static List<Tuple> kMethodRecursive(List<Integer> nums, Integer k, Set<Integer> hashSet, List<Tuple> result) {
+    public List<Tuple> kMethodRecursive(List<Integer> nums, Integer k, Set<Integer> hashSet, List<Tuple> result) {
         if (!nums.isEmpty()) {
             Integer num = nums.get(0);
             if (hashSet.contains(k - num)) {
